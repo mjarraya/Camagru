@@ -11,7 +11,7 @@ try {
 	$dbh = new PDO ($DB_DSN, $DB_USER, $DB_PASSWORD);
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$dbh->exec('CREATE TABLE IF NOT EXISTS members(id int NOT NULL AUTO_INCREMENT,
-		mail VARCHAR(320) UNIQUE NOT NULL,
+		mail VARCHAR(255) UNIQUE NOT NULL,
 		login VARCHAR(12) UNIQUE NOT NULL,
 		password VARCHAR(128) NOT NULL,
 		active ENUM(\'Y\', \'N\') NOT NULL DEFAULT \'N\',
@@ -32,7 +32,7 @@ try {
 		img_id int NOT NULL,
 		author VARCHAR(12) NOT NULL,
 		date VARCHAR(32) NOT NULL,
-		comment TEXT,
+		comment VARCHAR(320),
 		PRIMARY KEY(id)
 	)');
 	$dbh->exec('CREATE TABLE IF NOT EXISTS likes_img(
