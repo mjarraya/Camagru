@@ -24,7 +24,7 @@ if ($req->execute(array('login' => $login, 'mail' => $mail)) && $ret = $req->fet
 	$recipient = $_POST['mail'];
 	$subject = "Reset your password";
 	$header = "From camagru@42.fr";
-	$link = 'http://localhost:8080/'.$path.'/reset.php?login='.urlencode($_POST['login']).'&token='.urlencode($token);
+	$link = 'http://montasar.me/'.$path.'/reset.php?login='.urlencode($_POST['login']).'&token='.urlencode($token);
 	$message = 'Welcome to Camagru!
 
 	To reset your password, please click on the link below.'."\n".$link.'

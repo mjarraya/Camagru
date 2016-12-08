@@ -52,7 +52,7 @@ $pe = ($pg -1) * $ipg;
 
 	<?php
 	$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-	//if ($actual_link != "http://localhost:8080/camagru/index.php" && $_SESSION['logged_in_user'] != "")
+	//if ($actual_link != "http://montasar.me/camagru/index.php" && $_SESSION['logged_in_user'] != "")
 		include 'header.php';
 	if ($total == 0 && isset($_GET['query']))
 		echo "<h3>No image found for \"".$_GET['query']."\"</h3> <a href='index.php'>return home</a>";
@@ -116,6 +116,6 @@ $pe = ($pg -1) * $ipg;
 	?>
  </footer> -->
 <!-- <?php
-// if ($actual_link != "http://localhost:8080/camagru/index.php")
+// if ($actual_link != "http://montasar.me/camagru/index.php")
 // 		include('footer.php');
 ?> -->

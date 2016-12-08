@@ -71,7 +71,7 @@ if ($_POST['submit'] === "OK")
 		$recipient = $_POST['mail'];
 		$subject = "Activate your account";
 		$header = "From camagru@42.fr";
-		$link = 'http://localhost:8080/'.$path.'/activation.php?login='.urlencode($_POST['login']).'&cle='.urlencode($cle);
+		$link = 'http://montasar.me/'.$path.'/activation.php?login='.urlencode($_POST['login']).'&cle='.urlencode($cle);
 		$message = 'Welcome to Camagru!
 
 		To activate your account, please click on the link below.'."\n".$link.'

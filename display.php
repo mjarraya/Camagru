@@ -110,13 +110,13 @@ include 'connect.php';
 		}
 		echo '<div id="countlikes">'.$nbrl.'</div></div><div id="author">';
 
-		$page_courante = urlencode("localhost:8080/display.php?id=".$id);
+		$page_courante = urlencode("montasar.me/display.php?id=".$id);
 		// Twitter : Contenu du tweet
 		$tweet           = urlencode($_SESSION['logged_in_user'].' a partagé une photo');
 
 		// Pinterest : Contenu du pin et url de l'image
 		$pin_texte       = $tweet;
-		$pin_url         = "http://localhost:8080/camagru/images/201605111006573474.jpg";
+		$pin_url         = "http://montasar.me/camagru/images/201605111006573474.jpg";
 		?>
 		<!-- Facebook -->
 		<br/><br/><div id="partage">share on: <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page_courante; ?>" target="_blank" class="lien_partage lien_partage_facebook">Facebook</a>

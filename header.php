@@ -40,7 +40,7 @@ session_start(); ?>
 	</li>
 	<?php
 	$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-	if ($actual_link != "http://localhost:8080/camagru/gallery.php")
+	if ($actual_link != "http://montasar.me/camagru/gallery.php")
 	{
 		echo '<li><a id="gallerylogo" title="gallery" href="gallery.php"><img src="images/gallerylogo.png"></a></li>';
 	}

@@ -35,7 +35,7 @@ if ($req->execute(array('user' => $author)) && $ret = $req->fetch())
 	$message = "Hello ".$author."!
 
 	You have a new comment on your picture!
-	Click on the link below to check it."."\nhttp://localhost:8080/".$path."/".$url."\n";
+	Click on the link below to check it."."\nhttp://montasar.me/".$path."/".$url."\n";
 	mail($recipient, $subject, $message, $header);
 }
 header('Location: '.$url);
